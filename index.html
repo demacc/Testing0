@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>TestingOne Homepage</title>
+    <!-- Tailwind Cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container py-6 mx-auto relative">
+      <nav class="flex items-center justify-between">
+        <div class="cursor-pointer">
+          <img src="./assets/images/logo.svg" alt="" />
+        </div>
+
+        <ul
+          class="md:flex md:items-center md:static absolute h-screen md:h-auto md:w-auto hidden w-[-120%] top-0 right-0 md:z-auto z-[2] bg-white md:bg-transparent py-10 md:py-0 pl-8 md:pl-0"
+          id="list"
+        >
+          <div class="md:hidden">
+            <a href="index.html"
+              ><img src="./assets/images/icon-menu-close.svg" alt=""
+            /></a>
+          </div>
+          <li class="mx-5 my-6 md:my-0">
+            <a
+              href="#"
+              class="text-xl text-[#C5C6CE] font-['Inter', sans-serif] hover:text-rose-600 delay-200 ease-in-out transition"
+              >Home</a
+            >
+          </li>
+          <li class="mx-5 my-6 md:my-0">
+            <a
+              href="#"
+              class="text-xl text-[#C5C6CE] font-['Inter', sans-serif] hover:text-rose-600 delay-200 ease-in-out transition"
+              >New</a
+            >
+          </li>
+          <li class="mx-5 my-6 md:my-0">
+            <a
+              href="#"
+              class="text-xl text-[#C5C6CE] font-['Inter', sans-serif] hover:text-rose-600 delay-200 ease-in-out transition"
+              >Popular</a
+            >
+          </li>
+          <li class="mx-5 my-6 md:my-0">
+            <a
+              href="#"
+              class="text-xl text-[#C5C6CE] font-['Inter', sans-serif] hover:text-rose-600 delay-200 ease-in-out transition"
+              >Tranding</a
+            >
+          </li>
+          <li class="mx-5 my-6 md:my-0">
+            <a
+              href="#"
+              class="text-xl text-[#C5C6CE] font-['Inter', sans-serif] hover:text-rose-600 delay-200 ease-in-out transition"
+              >Categories</a
+            >
+          </li>
+        </ul>
+        <!-- toogle -->
+
+        <div class="flex items-center md:hidden" onclick="showMenu()">
+          <img src="./assets/images/icon-menu.svg" alt="" />
+        </div>
+      </nav>
+    </div>
+    <!-- main content  -->
+    <main class="container mx-auto my-8 box-border flex">
+      <!-- left container -->
+      <div class="left flex flex-col w-2/3">
+        <div>
+          <img src="./assets/images/image-web-3-desktop.jpg" alt="" class="" />
+        </div>
+        <div>
+          <div class="content flex my-5">
+            <h1 class="w-1/2 text-6xl font-bold font-['Inter']">
+              The Bright Feature Of Web 3.0?
+            </h1>
+            <div class="w-1/2">
+              <p class="leading-7 tracking-wide text-left mb-5">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Tempora totam vel quam sit optio ipsa sunt, eaque aperiam
+                repudiandae dolorem corporis dolores sed sint, dolor modi, vitae
+                placeat commodi. Modi?
+              </p>
+              <button
+                class="border px-9 uppercase py-2 bg-rose-500 cursor-pointer hover:bg-red-400"
+              >
+                <span
+                  class="tracking-widest font-['Inter'] text-sm font-bold text-slate-200 hover:text-slate-300"
+                  >Read more</span
+                >
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- right container  -->
+      <div class="right w-auto ml-14 bg-black shadow-lg">
+        <div class="text-white py-16 px-5">
+          <h1
+            class="text-3xl font-['Inter'] font-extrabold tracking-wide text-orange-400"
+          >
+            New
+          </h1>
+          <div class="py-6 border-b-2 border-solid border-slate-100/75">
+            <h1 class="text-xl font-bold tracking-tight pb-2 font-['Inter']">
+              Hydrogen Vs Electric Cars
+            </h1>
+            <p class="font-['Inter'] text-base text-slate-100/60">
+              Will hydrogen-fuled cars ever catch up to EVs?
+            </p>
+          </div>
+          <div class="py-6 border-b-2 border-solid border-slate-100/75">
+            <h1 class="text-xl font-bold tracking-tight pb-2 font-['Inter']">
+              Hydrogen Vs Electric Cars
+            </h1>
+            <p class="font-['Inter'] text-base text-slate-100/60">
+              Will hydrogen-fuled cars ever catch up to EVs?
+            </p>
+          </div>
+          <div class="py-6">
+            <h1 class="text-xl font-bold tracking-tight pb-2 font-['Inter']">
+              Hydrogen Vs Electric Cars
+            </h1>
+            <p class="font-['Inter'] text-base text-slate-100/60">
+              Will hydrogen-fuled cars ever catch up to EVs?
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- section -->
+    <section class="container mx-auto my-10">
+      <div class="flex justify-between items-center">
+        <div class="flex">
+          <div>
+            <img
+              src="./assets/images/image-retro-pcs.jpg"
+              class="w-30 h-36"
+              alt=""
+            />
+          </div>
+          <div class="pl-5">
+            <h1
+              class="text-4xl font-['Inter'] text-slate-500/70 font-extrabold tracking-tight"
+            >
+              O1
+            </h1>
+            <p class="py-3 font-bold text-xl tracking-normal font-['Inter']">
+              Reviving Retro PCs
+            </p>
+            <p class="leading-6 font-['Inter'] text-base text-slate-400/80">
+              What happens when old Pcs <br />
+              are given modern upgrades?
+            </p>
+          </div>
+        </div>
+        <div class="flex">
+          <div>
+            <img
+              src="./assets/images/image-top-laptops.jpg"
+              class="w-30 h-36"
+              alt=""
+            />
+          </div>
+          <div class="pl-5">
+            <h1
+              class="text-4xl font-['Inter'] text-slate-500/70 font-extrabold tracking-tight"
+            >
+              O2
+            </h1>
+            <p class="py-3 font-bold text-xl tracking-normal font-['Inter']">
+              Reviving Retro PCs
+            </p>
+            <p class="leading-6 font-['Inter'] text-base text-slate-400/80">
+              What happens when old Pcs <br />
+              are given modern upgrades?
+            </p>
+          </div>
+        </div>
+        <div class="flex">
+          <div>
+            <img
+              src="./assets/images/image-gaming-growth.jpg"
+              class="w-30 h-36"
+              alt=""
+            />
+          </div>
+          <div class="pl-5">
+            <h1
+              class="text-4xl font-['Inter'] text-slate-500/70 font-extrabold tracking-tight"
+            >
+              O3
+            </h1>
+            <p class="py-3 font-bold text-xl tracking-normal font-['Inter']">
+              Reviving Retro PCs
+            </p>
+            <p class="leading-6 font-['Inter'] text-base text-slate-400/80">
+              What happens when old Pcs <br />
+              are given modern upgrades?
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
